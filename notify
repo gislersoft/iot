@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Notificando...."
+touch alive
+date > alive
+git add alive
+git commit --amend --no-edit
+git push origin master -f --no-verify
