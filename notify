@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "Switching...."
-Notify
+echo "Notificando...."
 touch alive
 date > alive
 git add alive
