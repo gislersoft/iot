@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Switching...."
+FILE=config.json
+if [ -f "$FILE" ]; then
+    mv config.json config.json.off
+else 
+    mv config.json.off config.json
+fi
+git add .
+git commit --amend --no-edit
+git push origin master -f --no-verify
